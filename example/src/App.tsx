@@ -1,14 +1,11 @@
-import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-import { StyleSheet, View, Text } from 'react-native';
-import RnLibTemplate from 'rn-lib-template';
+import React from 'react';
+
+// import { Button } from 'rn-lib-template';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    RnLibTemplate.multiply(3, 7).then(setResult);
-  }, []);
 
   return (
     <View style={styles.container}>
